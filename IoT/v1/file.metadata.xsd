@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://raw.githubusercontent.com/smttech-ru/schema/main/IoT/file.metadata.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://raw.githubusercontent.com/smttech-ru/schema/main/IoT/v1/file.metadata.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="mes">
     <xs:complexType>
       <xs:attribute name="deleted" type="xs:unsignedByte" use="required" />
