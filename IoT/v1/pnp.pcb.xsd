@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:pnp="https://raw.githubusercontent.com/smttech-ru/schema/main/IoT/v1/pnp.pcb.xsd" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://raw.githubusercontent.com/smttech-ru/schema/main/IoT/v1/pnp.pcb.xsn" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import />
+  <xs:element name="pcb">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element ref="board" />
+          <xs:element ref="feeder" />
+          <xs:element ref="part" />
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="diff_count" type="xs:unsignedByte" use="required" />
+      <xs:attribute name="ts" type="xs:dateTime" use="required" />
+      <xs:attribute name="machine_id" type="xs:string" use="required" />
+      <xs:attribute name="signature" type="xs:string" use="required" />
+      <xs:attribute name="path" type="xs:string" use="required" />
+      <xs:attribute name="TotalCount" type="xs:unsignedByte" use="required" />
+      <xs:attribute name="signature_hash" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
