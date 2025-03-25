@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:mes="https://raw.githubusercontent.com/smttech-ru/schema/main/IoT/v1/text.file.xsd" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://raw.githubusercontent.com/smttech-ru/schema/main/IoT/v1/text.file.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import />
+  <xs:element name="parser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="TEXT" />
+      </xs:sequence>
+      <xs:attribute name="path" type="xs:string" use="required" />
+      <xs:attribute name="ts" type="xs:dateTime" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
