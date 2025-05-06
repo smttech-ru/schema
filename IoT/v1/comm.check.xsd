@@ -5,8 +5,8 @@
       <xs:attribute name="cache_freezed" type="xs:unsignedByte" use="required" />
       <xs:attribute name="ts" type="xs:dateTime" use="required" />
       <xs:attribute name="files_in_cache" type="xs:unsignedByte" use="required" />
-      <xs:attribute name="service_status" type="xs:string" use="required" />
-      <xs:attribute name="service_cache_size" type="xs:unsignedInt" use="required" />
+      <xs:attribute name="service_status" type="xs:string" />
+      <xs:attribute name="service_cache_size" type="xs:unsignedInt" />
       <xs:attribute name="client" type="xs:string" use="required" />
       <xs:attribute name="check_period" type="xs:unsignedShort" use="required" />
     </xs:complexType>
