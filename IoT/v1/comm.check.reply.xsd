@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://raw.githubusercontent.com/smttech-ru/schema/main/IoT/v1/comm.check.reply.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="mes">
+    <xs:complexType>
+      <xs:attribute name="result" type="xs:boolean" use="required" />
+      <xs:attribute name="ts" type="xs:dateTime" use="required" />
+      <xs:attribute name="client" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
