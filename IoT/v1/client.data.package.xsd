@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:env="https://raw.githubusercontent.com/smttech-ru/schema/main/IoT/v1/client.data.package.xsd" xmlns:mt="https://raw.githubusercontent.com/smttech-ru/schema/main/IoT/v1/client.data.package.meta.info.xsd" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://raw.githubusercontent.com/smttech-ru/schema/main/IoT/v1/client.data.package.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="https://raw.githubusercontent.com/smttech-ru/schema/main/IoT/v1/client.data.package.meta.info.xsd" />
+  <xs:element name="datapack">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element xmlns:q1="equipment.settings" ref="q1:log" />
+          <xs:element xmlns:q2="settings.filepath" ref="q2:log" />
+          <xs:element maxOccurs="unbounded" xmlns:q3="production.pcb.out.completed" ref="q3:log" />
+          <xs:element ref="mt:meta" />
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="client" type="xs:string" use="required" />
+      <xs:attribute name="ts" type="xs:dateTime" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

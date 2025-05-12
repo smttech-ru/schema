@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="https://raw.githubusercontent.com/smttech-ru/schema/main/IoT/v1/client.data.package.meta.info.xsd" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://raw.githubusercontent.com/smttech-ru/schema/main/IoT/v1/client.data.package.meta.info.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="meta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="pack">
+          <xs:complexType>
+            <xs:attribute name="packnum" type="xs:unsignedByte" use="required" />
+            <xs:attribute name="packid" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
